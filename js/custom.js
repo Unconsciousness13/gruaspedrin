@@ -5,12 +5,12 @@ $(function() {
         $(".navbar-collapse").collapse('hide');
     });
 
-    // AOS ANIMATION
-    AOS.init({
-        disable: 'mobile',
-        duration: 800,
-        anchorPlacement: 'center-bottom'
-    });
+    // // AOS ANIMATION
+    // AOS.init({
+    //     disable: 'mobile',
+    //     duration: 800,
+    //     anchorPlacement: 'center-bottom'
+    // });
 
 
     // SMOOTHSCROLL NAVBAR
@@ -23,4 +23,19 @@ $(function() {
             event.preventDefault();
         });
     });
+});
+
+// scroll to top 
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+        $('.scrol-arrow').fadeIn();
+    } else {
+        $('.scrol-arrow').fadeOut();
+    }
+});
+
+$('.scrol-arrow').click(function() {
+    $("html, body").animate({ scrollTop: 0 }, 1300);
+    return false;
 });
