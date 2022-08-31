@@ -1,8 +1,9 @@
 @import url("/css/aos.css");
 @import url("/css/bootstrap.min.css");
+@import url("/css/footer.css");
 
 :root {
-  --primary-color: #96dbfc;
+  --primary-color: #2901dd;
   --white-color: #ffffff;
   --dark-color: #212325;
   --about-bg-color: #f9f9f9;
@@ -77,10 +78,12 @@
 .nav-item .nav-link.active,
 .nav-item .nav-link:hover {
   color: var(--primary-color);
+  transition: all 0.5s ease;
 }
 
 .navbar .social-icon li a {
   color: var(--white-color);
+  transition: all 0.5s ease;
 }
 
 .navbar-toggler {
@@ -215,33 +218,8 @@
   border: 1px solid rgb(0, 0, 0);
 }
 
-.back-to-top {
-  position: fixed;
-  display: none;
-  background: #f7cac9;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  line-height: 1;
-  font-size: 22px;
-  right: 15px;
-  bottom: 15px;
-  transition: background 0.5s;
-  z-index: 9;
-}
 
-.back-to-top:hover {
-  background: #343148;
-}
 
-.back-to-top:hover i {
-  color: #f7cac9;
-}
-
-.back-to-top i {
-  color: #343148;
-  padding-top: 10px;
-}
 
 /*---------------------------------------
    RESPONSIVE STYLES              
@@ -406,28 +384,19 @@
   height: 100vh;
 }
 
-
-/* footer */
-footer {
-    background-color: #000000;
-    color: white;
-    height: 60px;
-    bottom: 0;
-    padding: 0;
-    
+.slider-icons {
+  height: 40px;
+	width: 40px;
+	text-align: center;
+	border-radius: 50%;
+	color: #2901dd;
+	background-color: transparent;
+	transition: all 0.5s ease;
+  font-size: 50px;
+  opacity: 0.7;
+  padding: 0px 30px 0px 0px;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social-icons li {
-    margin-right: 5px;
-    font-size: 25px;
-    padding-top: 15px;
-    text-decoration: none;
-    list-style-type: none;
-    
+.slider-icons:hover {
+  opacity: 1.5;
 }
