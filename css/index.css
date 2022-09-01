@@ -284,6 +284,8 @@
   padding: 15px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.07);
+  width: 100%;
+  height: auto;
 }
 
 .team .team-img {
@@ -431,6 +433,7 @@
 /* slider */
 
 
+
 .slick-slide{
   margin: 0 20px;
 }
@@ -468,4 +471,27 @@
   display: block;
 }
 
-/* test */
+.customer-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+/* about us */
+
+.about-us-container {
+  align-items: center;
+  margin-top: 50px;
+}
+
+.about-icons {
+  color: var(--primary-color);
+  font-size: 30px;
+  padding: 10px;
+}
+
+.about-header-2 {
+  font-size: 50px;
+  font-family: "Lato", sans-serif;
+
+}
