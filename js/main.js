@@ -69,25 +69,45 @@
 
   //  partners
   $(document).ready(function(){
-    $('.customer-logos').slick({
+    $('.partners-logos').slick({
+        
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
         dots: false,
-        pauseOnHover:true,
-        responsive: [{
-            breakpoint: 768,
-            setting: {
-                slidesToShow:4
+        pauseOnHover:true, 
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+              infinite: true,
             }
-        }, {
+          },
+          {
+            breakpoint: 680,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
             breakpoint: 520,
-            setting: {
-                slidesToShow: 3
+            settings: {
+              slidesToShow: 2,
             }
-        }]
+          },
+          {
+            breakpoint: 420,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
     });
 });
   
