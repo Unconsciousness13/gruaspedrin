@@ -21,6 +21,9 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
     <header>
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
@@ -40,13 +43,13 @@
                             <a href="#about" class="nav-link smoothScroll">Info</a>
                         </li>
 
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a href="#team" class="nav-link smoothScroll">Equipo</a>
                         </li>
 
                         <li class="nav-item">
                             <a href="#partners" class="nav-link smoothScroll">Flote</a>
-                        </li>
+                        </li> -->
 
                         <li class="nav-item">
                             <a href="#contact" class="nav-link smoothScroll">Contacto</a>
@@ -55,13 +58,13 @@
 
                     <ul class="social-icon ml-lg-3">
                         <li>
-                            <a href="#" class="fa-brands fa-facebook"></a>
+                            <a href="https://www.facebook.com/cochesDeSegunda" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="fa-brands fa-instagram"></a>
+                            <a href="https://www.instagram.com/gruaspedrin_bcn/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="fa-solid fa-envelope"></a>
+                            <a href="mailto:autogruaspedrin@outlook.com"><i class="fa-solid fa-envelope"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -121,7 +124,7 @@
         <div data-scroll-reveal="enter from the bottom after 0.3s" class="title text-center">
             <h2 class="about-header-2">Sobre nosotros</h2>
             <hr>
-        </div><!-- end title -->
+        </div>
 
     <div class="row text-center">
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -138,7 +141,7 @@
                     <h3>LOS MEJORES PRECIOS  </h3>
                     <p>Llámanos he infórmate, tenemos grandes descuentos para profesionales.</p>
             </div>
-        </div><!-- end column -->
+        </div>
 
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <div data-scroll-reveal="enter from the bottom after 0.5s" class="about-box">
@@ -146,7 +149,7 @@
                     <h3>LOS MEJORES PRECIOS  </h3>
                     <p>Somos una empresa ubicada en los alrededores de Barcelona</p>
             </div>
-        </div><!-- end column -->
+        </div>
 
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <div data-scroll-reveal="enter from the bottom after 0.5s" class="about-box">
@@ -177,11 +180,10 @@
     
     
     <!-- Equipo parte -->
-    <section id="team" class="reveal">
+    <!-- <section id="team" class="reveal">
         <div  class="team">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <!-- <p>Gruas Pedrin</p> -->
                     <h2 class="about-header-2" style="padding-bottom: 20px;">Nuestro equipo</h2>
                 </div>
                 <div class="row">
@@ -203,24 +205,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 wow" data-wow-delay="0.2s" data-aos="zoom-in"
-                    data-aos-duration="2200">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="./assets/images/team-2.jpg" alt="Image" />
-                                <div class="team-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-text">
-                                <h2>Pedro</h2>
-                                <p>Presidente</p>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="col-lg-3 col-md-6 wow" data-wow-delay="0.4s" data-aos="zoom-in"
                     data-aos-duration="2800">
                         <div class="team-item">
@@ -260,7 +245,14 @@
                 </div>
             </div>
         </div>
+    </section> -->
+    <!-- Gallery -->
+    <section id="gallery-container">
+       
+       
+    
     </section>
+    
 
     <!-- Partners-->
     <section id="partners">
@@ -287,27 +279,27 @@
   	 <div class="container">
   	 	<div class="row">
   	 		<div class="footer-col">
-  	 			<h4>Direccion</h4>
+  	 			<h4>Created by</h4>
   	 			<ul>
-  	 				<li><a href="#">about us</a></li>
-  	 				<li><a href="#">our services</a></li>
+  	 				<li ><a id="pako-team" href="https://pako.es/" target="_blank"> Pako™ </a></li>
+  	 				<li id="reserved-li">© 2021 All rights reserveds</li>
   	 			</ul>
   	 		</div>
   	 		<div class="footer-col">
   	 			<h4>Llamanos</h4>
   	 			<ul>
   	 				<li><a href="tel:+34 605 30 31 75"><i class="fa-solid fa-square-phone"> +34 605 30 31 75</i></a></li>
-  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="tel:+34 605 30 31 75"><i class="fa-solid fa-phone"></i></a></li>
                 </ul>
   	 		</div>
   	 		
   	 		<div class="footer-col">
   	 			<h4>follow us</h4>
   	 			<div class="social-links">
-  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
-  	 				<a href="#"><i class="fab fa-twitter"></i></a>
-  	 				<a href="#"><i class="fab fa-instagram"></i></a>
-  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 				<a href="https://www.facebook.com/cochesDeSegunda" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="https://www.instagram.com/gruaspedrin_bcn/" target="_blank"><i class="fab fa-instagram"></i></a>
+  	 				<a href="mailto:autogruaspedrin@outlook.com"><i class="fa-solid fa-envelope"></i></a>
+  	 				
                        
 
                       
@@ -324,6 +316,9 @@
     <script src="js/custom.js"></script>
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/new/main.js"></script>
+    <script src="js/new/bootstrap.bundle.min.js"></script>
+
     <script>
     AOS.init();
    </script>
