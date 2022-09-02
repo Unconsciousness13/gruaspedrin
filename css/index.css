@@ -188,15 +188,15 @@
   width: 45px;
   height: 45px;
   position: fixed;
-  bottom: 30px;
-  right: 20px;
+  bottom: 3%;
+  right: 3%;
   display: none;
   background: rgba(0, 0, 0, 0.8);
   text-align: center;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid var(--primary-color);
   padding-top: 12px;
   font-size: 20px;
-  color: rgb(255, 255, 255);
+  color: var(--primary-color);
   border-radius: 25px;
 }
 
