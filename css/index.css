@@ -5,34 +5,14 @@
 
 :root {
   --primary-color: #2901dd;
-  --white-color: #ffffff;
-  --dark-color: #212325;
-  --about-bg-color: #f9f9f9;
-  --gray-color: #909090;
-  --link-color: #404040;
-  --p-color: #666262;
-  --base-font-family: "Plain", sans-serif;
   --font-weight-bold: bold;
-  --font-weight-normal: normal;
-  --font-weight-light: 300;
-  --font-weight-thin: 100;
-  --h1-font-size: 48px;
-  --h2-font-size: 36px;
   --h3-font-size: 28px;
-  --h4-font-size: 24px;
-  --h5-font-size: 22px;
-  --h6-font-size: 22px;
-  --p-font-size: 18px;
-  --base-font-size: 16px;
-  --menu-font-size: 14px;
-  --border-radius-large: 100%;
-  --border-radius-small: 2px;
 }
 
 /* BG OVERLAY */
 
 .bg-overlay {
-  background: var(--dark-color);
+  background: #212325;
   position: absolute;
   top: 0;
   right: 0;
@@ -48,7 +28,7 @@
 -----------------------------------------*/
 
 .navbar {
-  background: var(--dark-color);
+  background: #212325;
   padding: 1rem;
 }
 
@@ -58,7 +38,7 @@
 }
 
 .navbar-brand {
-  color: var(--white-color);
+  color: #ffffff;
   font-size: var(--h3-font-size);
   font-weight: var(--font-weight-bold);
   line-height: normal;
@@ -67,7 +47,7 @@
 
 .nav-item .nav-link {
   display: block;
-  color: var(--white-color);
+  color: #ffffff;
   font-style: lite;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -88,7 +68,7 @@
 }
 
 .navbar .social-icon li a {
-  color: var(--white-color);
+  color:  #ffffff;
   transition: all 0.5s ease;
 }
 
@@ -481,7 +461,7 @@
 
 .about-us-container {
   align-items: center;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 .about-icons {
@@ -499,8 +479,14 @@
 
 /* others */
 
+#partners {
+  margin-top:100px;
+  margin-bottom: 100px;
+}
+
 #pako-team {
-  color:var(--primary-color)
+  color:var(--primary-color);
+  text-shadow: 0.2px 0.2px  white;
 }
 
 #reserved-li {
